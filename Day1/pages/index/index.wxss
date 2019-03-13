@@ -1,0 +1,102 @@
+/**index.wxss**/
+
+.container{
+  width: 100%;
+  height: 100%;
+  /* background: pink; */
+}
+.head{
+  width: 100%;
+  height: 490rpx;
+  /* background: pink; */
+}
+.head swiper{
+  width: 100%;
+  height: 100%;
+}
+.head swiper swiper-item{
+  width: 100%;
+  height: 100%;
+  background: pink;
+}
+.head swiper swiper-item image{
+  width: 100%;
+  height: 100%;
+}
+.banner1{
+  width: 100%;
+  height: 490rpx;
+}
+.sect{
+  width: 100%;
+  height: 220rpx;
+  /* background: red; */
+  display: flex;
+}
+.sect dl{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 32rpx;
+}
+.sect dl dt image{
+  width: 110rpx;
+  height: 110rpx;
+  margin-top: 30rpx;
+}
+.sect dl dd{
+  margin-top: 10rpx;
+}
+.main{
+  width: 100%;
+}
+.main>p{
+  width: 100%;
+  height: 100rpx;
+  line-height: 100rpx;
+}
+.main h3{
+  float: left;
+  margin-left: 30rpx;
+
+}
+.main p span{
+  display: inline-block;
+  color: #666;
+  font-size: 24rpx;
+  float: right;
+  margin-right: 30rpx;
+}
+.centers{
+  width: 100%;
+  overflow-x: scroll;
+}
+.centers::-webkit-scrollbar{
+  display: none;
+}
+.center{
+  width: 135%;
+  display: flex;
+}
+.center dl{
+  width: 510rpx;
+  display: flex;
+  flex-direction: column;
+}
+.center dl dt image{
+  width: 500rpx;
+  height: 260rpx;
+  margin-left: 5rpx;
+}
+.center dl dd p{
+  display: block;
+  margin-left: 20rpx;
+}
+.center dl dd p:nth-child(1){
+ font-size: 42rpx;
+}
+.center dl dd p:nth-child(2){
+ font-size: 30rpx;
+ color: #666;
+}

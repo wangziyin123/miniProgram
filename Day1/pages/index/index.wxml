@@ -1,0 +1,64 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="head">
+    <!-- <image class='banner1' src='../../img/banner.png'></image> -->
+    <swiper>
+      <swiper-item><image src='../../img/banner.png'></image></swiper-item>
+      <swiper-item><image src='../../img/banner.png'></image></swiper-item>
+      <swiper-item><image src='../../img/banner.png'></image></swiper-item>
+    </swiper>
+  </view>
+  <view class='sect'>
+    <dl>
+      <dt>
+        <image src='../../img/icon1.png'></image>
+      </dt>
+      <dd>放送表</dd>
+    </dl>
+    <dl>
+      <dt>
+        <image src='../../img/icon2.png'></image>
+      </dt>
+      <dd>分类</dd>
+    </dl>
+    <dl>
+      <dt>
+        <image src='../../img/icon3.png'></image>
+      </dt>
+      <dd>榜单</dd>
+    </dl>
+    <dl>
+      <dt>
+        <image src='../../img/icon4.png'></image>
+      </dt>
+      <dd>完结</dd>
+    </dl>
+  </view>
+  <view class='main'>
+    <p><h3>精品佳作</h3><navigator url='../logs/logs'><span>查看更多</span></navigator></p>
+    <view class='centers'>
+       <view class='center'>
+      <dl>
+        <dt>
+          <image src='../../img/wbanner1.png'></image>
+        </dt>
+        <dd>
+          <p>狂想情人</p>
+          <p>记住了，渣男必须死!</p>
+        </dd>
+    </dl>
+
+    <dl>
+        <dt>
+          <image src='../../img/wbanner1.png'></image>
+        </dt>
+        <dd>
+          <p>狂想情人</p>
+          <p>记住了，渣男必须死!</p>
+        </dd>
+    </dl>
+    </view>
+    </view>
+   
+  </view>
+</view>

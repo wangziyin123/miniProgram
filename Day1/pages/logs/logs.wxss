@@ -4,34 +4,34 @@
 }
 .dlist{
   width: 100%;
-  margin-top: 25rpx;
+  /* margin-top: 25rpx; */
 }
 .dlist dl{
   width: 100%;
   display: flex;
-  margin-top: 50rpx;
+  margin-top: 60rpx;
 }
 .dlist dl dt{
   margin-left: 35rpx;
 }
 .dlist image{
-  width: 400rpx;
-  height: 200rpx;
+  width: 269rpx;
+  height: 148rpx;
 }
 .dlist dl dd{
-  margin-left: 25rpx;
+  margin-left: 30rpx;
 }
-.dlist dl dd p{
-  display: inline-block;
+.dlist dl dd text{
+  display:block;
   margin: 10rpx 0;
 
 }
-.dlist dl dd p:nth-child(1){
-  font-size: 36rpx;
+.dlist dl dd text:nth-child(1){
+  font-size: 32rpx;
 }
 
-.dlist dl dd p:nth-child(2),.dlist dl dd p:nth-child(3){
-  font-size: 32rpx;
+.dlist dl dd text:nth-child(2),.dlist dl dd text:nth-child(3){
+  font-size: 24rpx;
   color: #666;
 }
 

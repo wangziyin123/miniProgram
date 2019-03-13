@@ -35,7 +35,7 @@
     </dl>
   </view>
   <view class='main'>
-    <p><h3>精品佳作</h3><navigator url='../logs/logs'><span>查看更多</span></navigator></p>
+    <view class='top'><span class='line'></span><h3>精品佳作</h3><navigator url='../logs/logs'><span>查看更多</span></navigator></view>
     <view class='centers'>
        <view class='center'>
       <dl>
@@ -43,8 +43,8 @@
           <image src='../../img/wbanner1.png'></image>
         </dt>
         <dd>
-          <p>狂想情人</p>
-          <p>记住了，渣男必须死!</p>
+          <text>狂想情人</text>
+          <text>记住了，渣男必须死!</text>
         </dd>
     </dl>
 
@@ -53,8 +53,8 @@
           <image src='../../img/wbanner1.png'></image>
         </dt>
         <dd>
-          <p>狂想情人</p>
-          <p>记住了，渣男必须死!</p>
+          <text>狂想情人</text>
+          <text>记住了，渣男必须死!</text>
         </dd>
     </dl>
     </view>

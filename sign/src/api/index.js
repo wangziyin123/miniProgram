@@ -16,3 +16,8 @@ export let addSign = params => {
 export let getSignList = params => {
     return request.get('/sign', params)
 }
+
+//获取面试详情
+export let getSignDetail = id => {
+    return request.get('/sign/' + id);
+}

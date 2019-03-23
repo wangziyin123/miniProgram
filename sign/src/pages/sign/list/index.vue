@@ -1,11 +1,12 @@
 <template>
   <div class="wrap">
     <header>
-      <span @click="updateState({'active':index})" v-for="(item,index) in types" :key="index" :class="active===index?'active':''">{{item}}</span>
+      <span @click="tabChange(index)" v-for="(item,index) in types" :key="index" :class="active===index?'active':''">{{item}}</span>
     </header>
     <div class="main">
-      <signList class="main" :list='list'></signList>
+      <signList :list='list'></signList>
     </div>
+    <p class="more" v-if="list.length">{{hasMore?'上拉加载更多': '我是有底线的'}}</p>
   </div>
 </template>
 
@@ -21,7 +22,9 @@ export default {
   computed:{
     ...mapState({
       active:state=>state.sign.active,
-      list:state=>state.sign.list
+      list:state=>state.sign.list,
+      hasMore:state=>state.sign.hasMore,
+      page:state=>state.sign.page
     })
   },
   methods:{
@@ -30,13 +33,23 @@ export default {
     }),
     ...mapActions({
       getList:'sign/getList'
-    })
+    }),
+    tabChange(index){
+      this.updateState({active:index,page:1})
+      this.getList();
+    }
   },
   components:{
     signList
   },
   onShow(){
     this.getList();
+  },
+  onReachBottom(){
+    if(this.hasMore){
+      this.updateState({page:this.page+1});
+      this.getList();
+    }
   }
 }
 </script>
@@ -72,7 +85,7 @@ export default {
     }
   }
   .main{
-    height: 2000rpx;
+    height: 1200rpx;
     margin-top: 110rpx;
      ul{
         width: 100%;
@@ -86,4 +99,12 @@ export default {
         }
     }
   }
+.more{
+  text-align: center;
+  font-size: 32rpx;
+  line-height: 2;
+  color: #999;
+  // border-bottom: 20rpx solid #eee;
+  border-top: 20rpx solid #eee;
+}
 </style>

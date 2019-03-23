@@ -1,6 +1,6 @@
 <template>
     <ul>
-        <li v-for="(item,index) in list" :key="index">
+        <li @click="goDetail(item.id)" v-for="(item,index) in list" :key="index">
             <p>{{item.company}}</p>
             <p>{{item.address.address}}</p>
             <p>{{item.start_time}}</p>
@@ -20,16 +20,12 @@ export default {
         }
     },
     methods:{
-        formatAddress(address){
-            address=JSON.parse(address);
-            console.log('address...',address.address)
-            return address.address
-        },
-        formatTime(start_time){
-            console.log('start_time',start_time,moment(start_time*1000).format('YYYY-MM-DD HH:mm'))
-            return moment(start_time*1000).format('YYYY-MM-DD HH:mm')
+        goDetail(id){
+            wx.navigateTo({
+                url:'/pages/sign/detail/main'
+            })
         }
-    }
+    },
 }
 </script>
 
